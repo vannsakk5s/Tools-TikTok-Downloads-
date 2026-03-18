@@ -26,13 +26,17 @@ import httpx
 from telegram import Update, InputMediaPhoto
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import yt_dlp
+from dotenv import load_dotenv
+
+# Load environment variables from a .env file if present
+load_dotenv()
 
 # -----------------------------------------------------------------------------
 # Configuration & Setup
 # -----------------------------------------------------------------------------
 
-# Replace this with your actual Telegram Bot Token from @BotFather
-BOT_TOKEN = "8728062030:AAEKjYTbIPU6RdG4dVw58mDHZ6seSlRaXlY"
+# Fetch the token from environment variables, or use the default placeholder
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # Configure logging
 logging.basicConfig(
