@@ -32,7 +32,7 @@ import yt_dlp
 # -----------------------------------------------------------------------------
 
 # Replace this with your actual Telegram Bot Token from @BotFather
-BOT_TOKEN = "8728062030:AAEKjYTbIPU6RdG4dVw58mDHZ6seSlRaXlY"
+BOT_TOKEN = "YOUR_BOT_TOKEN"
 
 # Configure logging
 logging.basicConfig(
